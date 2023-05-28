@@ -6,7 +6,7 @@
 /*   By: etakaham <etakaham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 20:40:07 by etakaham          #+#    #+#             */
-/*   Updated: 2023/05/26 08:09:29 by etakaham         ###   ########.fr       */
+/*   Updated: 2023/05/28 15:43:01 by etakaham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;
-	char	*s1_sub;
-	char	*s2_sub;
+	unsigned char	*s1_sub;
+	unsigned char	*s2_sub;
 
-	s1_sub = (char *)s1;
-	s2_sub = (char *)s2;
+	s1_sub = (unsigned char *)s1;
+	s2_sub = (unsigned char *)s2;
 	i = 0;
 	while (i < n)
 	{

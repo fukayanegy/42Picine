@@ -6,7 +6,7 @@
 /*   By: etakaham <etakaham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 21:37:09 by etakaham          #+#    #+#             */
-/*   Updated: 2023/05/25 22:19:13 by etakaham         ###   ########.fr       */
+/*   Updated: 2023/05/28 15:44:06 by etakaham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,6 @@ char	*ft_strchr(const char *s, int c)
 		if (*s_sub == (char)c)
 			return (s_sub);
 		s_sub++;
-		if (*s_sub == (char)c)
-			return (s_sub);
 	}
 	return (NULL);
 }

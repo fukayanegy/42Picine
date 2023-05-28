@@ -6,7 +6,7 @@
 /*   By: etakaham <etakaham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 20:40:07 by etakaham          #+#    #+#             */
-/*   Updated: 2023/05/25 22:17:12 by etakaham         ###   ########.fr       */
+/*   Updated: 2023/05/28 15:43:41 by etakaham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	char	*s_sub;
+	unsigned char	*s_sub;
 	size_t	i;
 
-	s_sub = (char *)s;
+	s_sub = (unsigned char *)s;
 	i = 0;
 	while (i < n)
 	{
-		if (s_sub[i] == (char)c)
+		if (s_sub[i] == (unsigned char)c)
 		{
 			s_sub += i;
 			return (s_sub);

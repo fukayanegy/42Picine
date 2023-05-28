@@ -6,7 +6,7 @@
 /*   By: etakaham <etakaham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 21:37:17 by etakaham          #+#    #+#             */
-/*   Updated: 2023/05/25 22:21:11 by etakaham         ###   ########.fr       */
+/*   Updated: 2023/05/28 15:48:22 by etakaham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	i;
 	char	*ans;
 
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
 	s_1_len = ft_strlen(s1);
 	s_2_len = ft_strlen(s2);
 	ans = malloc((sizeof(char)) * (s_1_len + s_2_len));

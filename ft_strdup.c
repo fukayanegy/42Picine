@@ -6,7 +6,7 @@
 /*   By: etakaham <etakaham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/25 21:37:12 by etakaham          #+#    #+#             */
-/*   Updated: 2023/05/25 22:19:31 by etakaham         ###   ########.fr       */
+/*   Updated: 2023/05/28 15:46:59 by etakaham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ char	*ft_strdup(const char *s1)
 		ans[i] = s1[i];
 		i++;
 	}
+	ans[i] = '\0';
 	return (ans);
 }

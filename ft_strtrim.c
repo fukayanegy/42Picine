@@ -6,7 +6,7 @@
 /*   By: etakaham <etakaham@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 12:34:18 by etakaham          #+#    #+#             */
-/*   Updated: 2023/05/28 12:34:25 by etakaham         ###   ########.fr       */
+/*   Updated: 2023/05/28 16:03:28 by etakaham         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	start;
 	size_t	end;
 
+	if (s1 == NULL || set == NULL)
+		return (NULL);
 	end = ft_strlen(s1);
 	ft_strtrim_start(s1, set, &start);
 	while (end > 0)
